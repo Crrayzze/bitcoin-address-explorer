@@ -1,0 +1,174 @@
+.transaction-container {
+  display: flex;
+  flex-direction: row;
+  max-height: 100px;
+  min-height: 80px;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 20px;
+  padding-left: 30px;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.transaction-container:hover {
+  background-color: var(--color-light-gray);
+}
+
+.transaction-logo {
+  padding-right: 40px;
+}
+
+.transaction-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.transaction-hash {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.transaction-hash-label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: black;
+}
+
+.transaction-hash-short {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--color-gray);
+  padding-top: 2px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.transaction-hash-short:hover {
+  text-decoration: underline;
+}
+
+.transaction-hash-copy {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  align-items: center;
+  margin-left: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+  fill: var(--color-gray);
+}
+
+.transaction-hash-copy:hover {
+  color: var(--color-hover-light-gray);
+}
+
+.transaction-time {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--color-gray);
+  padding-top: 5px;
+}
+
+.transaction-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.transaction-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto !important;
+}
+
+.transaction-received {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-green);
+}
+
+.transaction-sent {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-red);
+}
+
+.transaction-fiat {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--color-gray);
+  padding-left: 5px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .transaction-container {
+      padding-left: 15px;
+  }
+
+  .transaction-sent {
+    font-size: 0.9rem;
+  }
+
+  .transaction-received {
+    font-size: 0.9rem;
+  }
+
+  .transaction-fiat {
+    font-size: 0.7rem;
+    padding-right: 15px;
+  }
+
+  .transaction-logo {
+    padding-right: 15px;
+  }
+
+  .transaction-hash-short {
+    font-size: 0.7rem;
+  }
+
+  .transaction-hash-label {
+    font-size: 0.8rem;
+  }
+
+  .transaction-time {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .transaction-container {
+    padding-left: 10px;
+  }
+
+  .transaction-sent {
+    font-size: 0.8rem;
+  }
+
+  .transaction-received {
+    font-size: 0.8rem;
+  }
+
+  .transaction-fiat {
+    font-size: 0.7rem;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .transaction-right {
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+  }
+
+  .transaction-fiat {
+    padding-right: 0px;
+  }
+}
