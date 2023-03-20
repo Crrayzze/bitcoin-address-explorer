@@ -1,0 +1,17 @@
+* {
+  font-family: 'Inter', sans-serif;
+  --webkit-font-smoothing: antialiased;
+  transition: 0.3s;
+  margin: 0;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-light-gray: #e4e4e4;
+  --color-hover-light-gray: #d9d8d8;
+  --color-gray: #838383;
+  --color-blue: #2300F6;
+  --color-green: #4ECB71;
+  --color-red: #F24E1E;
+  --nav-bar-height: 80px;
+}

@@ -1,0 +1,7 @@
+.divider-horizontal {
+  border-bottom: 1px solid var(--color-light-gray);
+  width: 100vw;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+}
